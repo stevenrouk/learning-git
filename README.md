@@ -49,3 +49,11 @@ git checkout master
 git merge --no-ff develop
 git push origin master
 ```
+
+##RESOURCES
+These helped me out a lot!
+
+[A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+[Versioning Git Branches](https://datasift.github.io/gitflow/Versioning.html)
+[The Git Book](https://git-scm.com/book/en/v2)
+[Stack Overflow: truly, the only reason I'm a successful coder.](http://stackoverflow.com/)
