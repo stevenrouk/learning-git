@@ -32,11 +32,20 @@ git push origin new_feature
 
 
 ##MERGE
-(switch back to development branch, then merge in the new feature, push to github)
+(switch back to development branch, then merge in the new feature, delete feature branch, push to github)
 
 ```
 git checkout develop
 git merge --no-ff new_feature
 git branch -d new_feature
 git push origin develop
+```
+
+##MERGE
+(switch to master branch, merge in all new developments from the development branch, push to github)
+
+```
+git checkout master
+git merge --no-ff develop
+git push origin master
 ```
