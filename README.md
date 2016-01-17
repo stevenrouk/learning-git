@@ -32,7 +32,7 @@ git push origin new_feature
 
 
 ##MERGE
-(switch back to development branch, then merge in the new feature, push to github)
+(switch back to development branch, then merge in the new feature, delete feature branch, push to github)
 
 ```
 git checkout develop
@@ -40,3 +40,20 @@ git merge --no-ff new_feature
 git branch -d new_feature
 git push origin develop
 ```
+
+##MERGE
+(switch to master branch, merge in all new developments from the development branch, push to github)
+
+```
+git checkout master
+git merge --no-ff develop
+git push origin master
+```
+
+##RESOURCES
+These helped me out a lot!
+
+[A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+[Versioning Git Branches](https://datasift.github.io/gitflow/Versioning.html)
+[The Git Book](https://git-scm.com/book/en/v2)
+[Stack Overflow: truly, the only reason I'm a successful coder.](http://stackoverflow.com/)
